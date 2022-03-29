@@ -3,7 +3,6 @@ let ping = document.querySelector(".ping");
 
 ping.addEventListener("click", () => {goPing()})
 
-
 const goPing = async () => {
     url = new URL(`http://localhost:3306/ping`)
     let response = await fetch(url)
@@ -17,7 +16,8 @@ const goPing = async () => {
 
 const render = async () => {
     let pongHTML = ''
-    pongHTML = `<h2>Pong : ${pong}</h2>`
+    pongHTML = `<h2>Pong : ${pong}</h2>
+                <div class="pong">퐁!</div>`
 
     document.getElementById("pong").innerHTML=pongHTML;
 }

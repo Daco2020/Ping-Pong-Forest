@@ -1,0 +1,13 @@
+.pong{
+    display: flex;
+    justify-content: center;
+    font-size: 500px;
+    animation-name: pong;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes pong {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
